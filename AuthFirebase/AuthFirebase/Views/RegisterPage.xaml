@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AuthFirebase.Views.RegisterPage">
+
+    <Frame Grid.Row="1" BackgroundColor="#f0f0f0" CornerRadius="10" Padding="10" Margin="0,10,0,0">
+        <StackLayout Spacing="10">
+            <Entry Placeholder="Correo electrónico" x:Name="newemail" Keyboard="Email" TextColor="Black"
+               PlaceholderColor="#7f7f7f" BackgroundColor="#ededed" HeightRequest="40" Margin="10,5,10,0"/>
+            <Entry Placeholder="Contraseña" x:Name="newpassword" IsPassword="True" TextColor="Black"
+               PlaceholderColor="#7f7f7f" BackgroundColor="#ededed" HeightRequest="40" Margin="10,5,10,0"/>
+            <Button x:Name="btnRegister" Text="Registrar" Clicked="btnRegister_Clicked"
+                BackgroundColor="#2196F3" TextColor="White" CornerRadius="5" HeightRequest="40"
+                Margin="10,10,10,0"/>
+        </StackLayout>
+    </Frame>
+</ContentPage>
